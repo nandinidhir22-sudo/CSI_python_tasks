@@ -75,11 +75,41 @@
 #     return s
 # print(sum(3,4))
 
-def show(n):
-    if n==0:
-        return
-    else:
-        print(n)
-        show(n-1)
+# def show(n):
+#     if n==0:
+#         return
+#     else:
+#         print(n)
+#         show(n-1)
+# show(5)
 
-show(5)
+# class Student:
+#     name= "nandini"
+# s1=Student()
+# print(s1.name)
+
+# class cars:
+#     color="blue"
+#     model="e class"
+#     branc="merc"
+# car1=cars()
+# print(car1.branc)
+
+# class student:
+#     name="nandini"
+#     section="it-2"
+#     def __init__(self):
+#         print(self)
+#         print("adding new student to database...")
+# s1=student()
+
+class student:
+    college_name="akg"
+    def __init__(self, fullname,surname,marks):
+        self.name=fullname+surname
+        self.marks=marks
+
+s1=student("nandini","dhir",98)
+print(s1.college_name)
+print(s1.marks)
+print(s1.name)
