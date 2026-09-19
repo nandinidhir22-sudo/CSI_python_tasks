@@ -136,24 +136,49 @@
 # car1=car()
 # car1.start()
 
-class Account:
-    def __init__(self,balance,acc_num):
-        self.balance= balance
-        self.acc_num=acc_num
-    def debit(self,debamount):
-        self.balance= self.balance-debamount
-       # print("after debit",self.balance)
-        print("after debit",self.get_bal())
-    def credit(self,credamount):
-        self.balance=self.balance+credamount
-        #print("after credit",self.balance)
-        print("after credit",self.get_bal())
-    def  get_bal(self):
-        return self.balance
-        #print("balance=",self.balance)
+# class Account:
+#     def __init__(self,balance,acc_num):
+#         self.balance= balance
+#         self.acc_num=acc_num
+#     def debit(self,debamount):
+#         self.balance= self.balance-debamount
+#        # print("after debit",self.balance)
+#         print("after debit",self.get_bal())
+#     def credit(self,credamount):
+#         self.balance=self.balance+credamount
+#         #print("after credit",self.balance)
+#         print("after credit",self.get_bal())
+#     def  get_bal(self):
+#         return self.balance
+#         #print("balance=",self.balance)
 
-acc1= Account(10000,12345)
-print(acc1.balance)
-print(acc1.acc_num)
-acc1.debit(1000)
-acc1.credit(3000)
+# acc1= Account(10000,12345)
+# print(acc1.balance)
+# print(acc1.acc_num)
+# acc1.debit(1000)
+# acc1.credit(3000)
+
+# class Animal:
+#     def eat(self):
+#         print("Eating")
+
+# class Dog(Animal):
+#     def bark(self):
+#         print("Barking")
+
+# d = Dog()
+# d.eat()    
+# d.bark()
+
+
+class Dog:
+    def sound(self):
+        print("Bark")
+
+class Cat:
+    def sound(self):
+        print("Meow")
+c=Cat()
+d=Dog()
+print(d.sound())
+print(c.sound())
