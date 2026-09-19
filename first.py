@@ -103,13 +103,57 @@
 #         print("adding new student to database...")
 # s1=student()
 
-class student:
-    college_name="akg"
-    def __init__(self, fullname,surname,marks):
-        self.name=fullname+surname
-        self.marks=marks
+# class student:
+#     college_name="akg"
+#     def __init__(self, fullname,surname,marks):
+#         self.name=fullname+surname
+#         self.marks=marks
+#     @staticmethod
+#     def hello():
+#         print("welcome!")
 
-s1=student("nandini","dhir",98)
-print(s1.college_name)
-print(s1.marks)
-print(s1.name)
+#     def get_marks(self):
+#         return self.marks
+
+# s1=student("nandini","dhir",98)
+# print(s1.college_name)
+# print(s1.marks)
+# print(s1.name)
+# print(s1.hello())
+# print(s1.get_marks())
+
+# class car:
+#     def __init__(self):
+#         self.accelerator = False
+#         self.breakk = False
+#         self.clutch = False
+#     def start(self):
+#         self.accelerator = True
+#         self.breakk = False
+#         self.clutch = True
+#         print("car started")
+
+# car1=car()
+# car1.start()
+
+class Account:
+    def __init__(self,balance,acc_num):
+        self.balance= balance
+        self.acc_num=acc_num
+    def debit(self,debamount):
+        self.balance= self.balance-debamount
+       # print("after debit",self.balance)
+        print("after debit",self.get_bal())
+    def credit(self,credamount):
+        self.balance=self.balance+credamount
+        #print("after credit",self.balance)
+        print("after credit",self.get_bal())
+    def  get_bal(self):
+        return self.balance
+        #print("balance=",self.balance)
+
+acc1= Account(10000,12345)
+print(acc1.balance)
+print(acc1.acc_num)
+acc1.debit(1000)
+acc1.credit(3000)
